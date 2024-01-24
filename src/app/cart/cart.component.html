@@ -1,0 +1,17 @@
+
+<div class="container">
+    <h2>Your Shopping Cart</h2>
+  
+    <ul class="cart-items">
+      <li *ngFor="let item of cartItems" class="cart-item">
+        <span>{{ item.name }}</span>
+        <span class="price">${{ item.price }}</span>
+        <button mat-button color="warn" (click)="removeFromCart(item)">Remove</button>
+      </li>
+    </ul>
+  
+    <div class="total-cost">
+      <p>Total Cost: {{ getTotalCost() | currency }}</p>
+    </div>
+  </div>
+  

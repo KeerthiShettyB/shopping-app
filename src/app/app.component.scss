@@ -1,0 +1,19 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+  
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+  

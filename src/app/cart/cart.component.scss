@@ -1,0 +1,40 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  
+    span {
+      flex: 1;
+    }
+  
+    button {
+      margin-left: 10px;
+    }
+  }
+  
+  .total-cost {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+  }
+  

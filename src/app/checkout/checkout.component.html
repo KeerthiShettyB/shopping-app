@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>Checkout</h2>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="form-group">
+        <input matInput placeholder="First Name" formControlName="firstName" />
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Last Name" formControlName="lastName" />
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Mobile No" formControlName="mobileNo" />
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Address" formControlName="address" />
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Email" formControlName="email" />
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Age" type="number" formControlName="age" />
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <input matInput placeholder="Date of Birth" type="date" formControlName="dob" />
+      </mat-form-field>
+  
+      <button type="submit" mat-raised-button [disabled]="!checkoutForm.valid">Submit</button>
+    </form>
+  </div>
+  

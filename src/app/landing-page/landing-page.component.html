@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 class="title">Explore Our Products</h2>
+    <ul class="product-list">
+      <li *ngFor="let product of products" class="product-item">
+        <div class="product-info">
+          <span class="product-name">{{ product.name }}</span>
+          <span class="product-price">${{ product.price }}</span>
+        </div>
+        <button mat-button (click)="addToCart(product)" class="add-to-cart-button">
+          Add to Cart
+        </button>
+      </li>
+    </ul>
+  </div>
+  
